@@ -1,7 +1,6 @@
 // src/codegen/codegen.entity.ts
 import { Entity, Column, PrimaryGeneratedColumn, OneToOne } from 'typeorm';
 import { OpenTokenCodeType } from './codegen.type';
-import { Lesson } from '../lesson/lesson.entity'; // Ensure the correct path
 
 @Entity()
 export class CodeGen {
@@ -26,6 +25,4 @@ export class CodeGen {
   @Column()
   token_count: number;
 
-  @OneToOne(() => Lesson, lesson => lesson.tokenData)
-  lesson: Lesson;
 }

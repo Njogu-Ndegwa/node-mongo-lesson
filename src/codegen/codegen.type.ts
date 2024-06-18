@@ -1,6 +1,5 @@
 // src/token.type.ts
 import { ObjectType, Field, ID, registerEnumType } from "@nestjs/graphql";
-import { LessonType } from "src/lesson/lesson.type";
 export enum OpenTokenCodeType {
   ADD_TIME = "ADD_TIME",
   SET_TIME = "SET_TIME",
@@ -35,6 +34,4 @@ export class TokenDataType {
   @Field()
   token_count: number;
 
-  @Field(type => LessonType)
-  lesson: LessonType;
 }

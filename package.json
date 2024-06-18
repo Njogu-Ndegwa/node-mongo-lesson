@@ -29,7 +29,7 @@
     "@nestjs/typeorm": "^10.0.2",
     "@types/mongodb": "^4.0.7",
     "graphql": "^16.8.2",
-    "mongodb": "^5.9.2",
+    "mongodb": "^6.7.0",
     "reflect-metadata": "^0.2.0",
     "rxjs": "^7.8.1",
     "typeorm": "^0.3.20",

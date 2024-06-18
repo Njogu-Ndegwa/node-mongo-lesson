@@ -1,6 +1,6 @@
 // src/lesson/lesson.entity.ts
 import { Column, Entity, ObjectIdColumn, PrimaryColumn, OneToOne, JoinColumn } from 'typeorm';
-import { CodeGen as TokenData } from '../codegen/codegen.entity'; // Ensure the correct path
+import { CodeGen as CodeGenerator } from '../codegen/codegen.entity'; // Ensure the correct path
 
 @Entity()
 export class Lesson {
@@ -13,9 +13,9 @@ export class Lesson {
   @Column()
   name: string;
 
-  @OneToOne(() => TokenData, tokenData => tokenData.lesson, { cascade: true }) // Ensure cascade is set if needed
+  @OneToOne(() => CodeGenerator, { cascade: true })
   @JoinColumn()
-  tokenData: TokenData;
+  codeGenerator: CodeGenerator;
 
   @Column()
   startDate: string;

@@ -10,9 +10,8 @@ import { CodeGen } from './codegen/codegen.entity';
   imports: [
     TypeOrmModule.forRoot({
       type: 'mongodb',
-      url: "mongodb+srv://dennisndegwa001:Wanjiku0@cluster0.o6rbnjz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+      url: "mongodb+srv://dennisndegwa001:Dennis0@cluster0.o6rbnjz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
       synchronize: false,
-      useUnifiedTopology: true,
       entities: [
         Lesson,
         CodeGen
